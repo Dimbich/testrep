@@ -11,6 +11,13 @@ img {
   margin: auto;
 }
 
+.button {
+  border-radius: 10px;
+  background-color: #ffd200;
+  border: none;
+  padding: 18px 30px;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 760px;
@@ -22,13 +29,6 @@ img {
     max-width: 580px;
     width: 90%;
   }
-}
-
-.button {
-  border-radius: 10px;
-  background-color: #ffd200;
-  border: none;
-  padding: 18px 30px;
 }
 
 .navbar {
@@ -85,8 +85,10 @@ img {
     display: none;
   }
   .navbar__button {
-    font-size: 12px;
-    padding: 12px 26px;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 15px 26px;
+    border-radius: 5px;
   }
   .navbar__logo {
     width: 90px;
