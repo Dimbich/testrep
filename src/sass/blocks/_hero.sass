@@ -35,15 +35,24 @@
       max-width: 300px
 @media (max-width: 1200px)
   .hero
-    &-block 
-      flex-direction: column
-    &-list 
-      margin-bottom: 44px
-    &-text 
-      padding-right: 10px
+    &-image 
+      flex-basis: 60%
+    &-text
+      flex-basis: 42%
+      padding-right: 8%
+      &__title
+        font-size: 30px
+        line-height: 1.4
+        margin-bottom: 30px
+    &-list
+      &__text 
+        max-width: 70%
 @media (max-width: 768px)
   .hero
+    &-block 
+      flex-direction: column
     &-text
+      padding-right: 10px
       &__title
         font-size: 24px
         line-height: 1.4
@@ -52,6 +61,7 @@
         font-size: 16px
         margin-bottom: 28px
     &-list 
+      margin-bottom: 44px
       &__item
         margin-bottom: 20px
       &__text
