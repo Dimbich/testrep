@@ -7,7 +7,7 @@
   &__phone 
     color: $text-color
     font-size: 20px
-    font-weight: 400
+    +bold
     text-decoration: none
     margin-top: 10px
     display: inline-block
@@ -20,6 +20,10 @@
     align-items: center
   &__button
     margin-left: 30px
+    +bold
+    font-size: 13px
+  &__address
+    font-size: 13px  
 @media (max-width: 1200px) 
   .navbar
     padding: 8px 15px
@@ -27,14 +31,12 @@
       width: 120px
     &__phone
       font-size: 18px
-    &__address
-      font-size: 15px 
-    &__button
-      font-size: 15px
       margin-left: 20px  
 @media (max-width: 768px)
   .navbar
-    padding: 8px 0
+    padding: 0
+    padding-top: 17px
+    // margin-right: 5px
     &__contacts
       display: none
     &__button

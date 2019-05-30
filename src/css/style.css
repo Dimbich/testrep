@@ -1,5 +1,26 @@
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo San Bold';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Museo Sans Light', sans-serif;
 }
 
 img {
@@ -20,17 +41,16 @@ img {
 
 @media (max-width: 1200px) {
   .container {
-    padding: 0 20px;
+    padding: 0 21px;
   }
   .button {
-    padding: 15px 25px;
+    padding: 15px 26px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 580px;
-    width: 90%;
   }
 }
 
@@ -51,7 +71,7 @@ img {
 .navbar__phone {
   color: #333333;
   font-size: 20px;
-  font-weight: 400;
+  font-family: 'Museo San Bold', sans-serif;
   text-decoration: none;
   margin-top: 10px;
   display: inline-block;
@@ -81,6 +101,12 @@ img {
 
 .navbar__button {
   margin-left: 30px;
+  font-family: 'Museo San Bold', sans-serif;
+  font-size: 13px;
+}
+
+.navbar__address {
+  font-size: 13px;
 }
 
 @media (max-width: 1200px) {
@@ -92,19 +118,14 @@ img {
   }
   .navbar__phone {
     font-size: 18px;
-  }
-  .navbar__address {
-    font-size: 15px;
-  }
-  .navbar__button {
-    font-size: 15px;
     margin-left: 20px;
   }
 }
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 8px 0;
+    padding: 0;
+    padding-top: 17px;
   }
   .navbar__contacts {
     display: none;
@@ -131,14 +152,14 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 42%;
-      flex-basis: 42%;
+  -ms-flex-preferred-size: 53%;
+      flex-basis: 53%;
   padding-right: 140px;
 }
 
 .hero-text__title {
+  font-family: 'Museo San Bold', sans-serif;
   font-size: 41px;
-  font-weight: 400;
   line-height: 55px;
   margin-bottom: 40px;
 }
@@ -146,8 +167,8 @@ img {
 .hero-text__subtitle {
   display: inline-block;
   margin-bottom: 70px;
+  font-family: 'Museo San Bold', sans-serif;
   font-size: 20px;
-  font-weight: 400;
 }
 
 .hero-list {
@@ -179,11 +200,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .hero-list__text {
-  max-width: 300px;
+  max-width: 275px;
+  line-height: 24px;
+  font-size: 14px;
 }
 
 @media (max-width: 1200px) {
@@ -220,11 +243,13 @@ img {
   }
   .hero-list__text {
     max-width: 110px;
-    font-size: 15px;
   }
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding-top: 38px;
+  }
   .hero-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -234,7 +259,7 @@ img {
   .hero-text__title {
     font-size: 24px;
     line-height: 1.4;
-    margin-bottom: 15px;
+    margin-bottom: 4px;
   }
   .hero-text__subtitle {
     font-size: 16px;
@@ -251,6 +276,7 @@ img {
   .hero-list__text {
     font-size: 12px;
     max-width: 200px;
+    line-height: 1;
   }
   .hero-list__image {
     margin-right: 15px;
