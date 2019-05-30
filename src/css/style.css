@@ -19,6 +19,9 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
   .button {
     padding: 15px 25px;
   }
@@ -135,7 +138,7 @@ img {
 
 .hero-text__title {
   font-size: 41px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 55px;
   margin-bottom: 40px;
 }
@@ -144,7 +147,7 @@ img {
   display: inline-block;
   margin-bottom: 70px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .hero-list {
@@ -227,9 +230,6 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .hero-text {
-    padding-right: 10px;
   }
   .hero-text__title {
     font-size: 24px;
