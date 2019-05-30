@@ -7,7 +7,7 @@ img {
 }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
   margin: auto;
 }
 
@@ -19,9 +19,6 @@ img {
 }
 
 @media (max-width: 1200px) {
-  .container {
-    max-width: 90%;
-  }
   .button {
     padding: 15px 25px;
   }
@@ -84,6 +81,9 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .navbar {
+    padding: 8px 15px;
+  }
   .navbar__logo {
     width: 120px;
   }
@@ -100,6 +100,9 @@ img {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 8px 0;
+  }
   .navbar__contacts {
     display: none;
   }
@@ -181,22 +184,40 @@ img {
 }
 
 @media (max-width: 1200px) {
-  .hero-image {
-    -ms-flex-preferred-size: 60%;
-        flex-basis: 60%;
+  .hero-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .hero-text {
-    -ms-flex-preferred-size: 42%;
-        flex-basis: 42%;
-    padding-right: 8%;
+    padding: 0;
   }
   .hero-text__title {
     font-size: 30px;
     line-height: 1.4;
     margin-bottom: 30px;
   }
+  .hero-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-list__item {
+    width: 28%;
+  }
   .hero-list__text {
-    max-width: 70%;
+    max-width: 110px;
+    font-size: 15px;
   }
 }
 
@@ -220,10 +241,12 @@ img {
     margin-bottom: 28px;
   }
   .hero-list {
+    display: block;
     margin-bottom: 44px;
   }
   .hero-list__item {
     margin-bottom: 20px;
+    min-width: 100%;
   }
   .hero-list__text {
     font-size: 12px;
