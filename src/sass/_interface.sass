@@ -12,23 +12,24 @@ img
   background-color: $main-color
   border: none
   padding: 18px 30px
+  +bold
   &:hover
     background-color: lighten($main-color,10%)
     cursor: pointer
 .input  
   border: 1px solid $border-input
-  padding: 20px 26px
+  padding: 22px 26px
   font-size: 15px
   border-radius: 10px   
 .section
-  padding: 90px 0
+  padding-top: 66px
+  padding-bottom: 90px
   &-title 
     font-size: 24px;
     +bold
   &-subtitle
     display: block
-    font-size: 16px;
-    +bold     
+    font-size: 16px; 
 @media (max-width: 1200px)
   .container     
    padding: 0 21px
@@ -37,4 +38,5 @@ img
 @media (max-width: 768px)
   .container 
     max-width: 580px
-    // width: 90%
+  .button
+    padding: 19px 62px
