@@ -386,6 +386,8 @@ img {
 }
 
 .offer__phone {
+  display: block;
+  min-width: 192px;
   font-family: 'Museo San Bold', sans-serif;
 }
 
