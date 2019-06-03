@@ -53,11 +53,13 @@
     &-list
       display: flex
       justify-content: space-between
-      align-items: center
+      &__image
+        margin-right: 20px
       &__item
-        width: 28%
+        width: 33%
+        align-items: flex-start
       &__text        
-        max-width: 110px        
+        max-width: 150px        
 @media (max-width: 768px)
   .hero
     padding-top: 38px
@@ -77,6 +79,7 @@
       &__item
         margin-bottom: 20px
         min-width: 100%
+        // align-items: center
       &__text
         font-size: 12px
         max-width: 200px
