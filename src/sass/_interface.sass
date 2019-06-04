@@ -25,11 +25,17 @@ img
   padding-top: 66px
   padding-bottom: 90px
   &-title 
+    text-align: center
     font-size: 24px;
     +bold
   &-subtitle
     display: block
-    font-size: 16px; 
+    font-size: 16px;
+.arrows 
+  &__left, &__right
+    &:hover
+      cursor: pointer
+
 @media (max-width: 1200px)
   .container     
    padding: 0 21px
@@ -40,3 +46,6 @@ img
     padding: 0 23px
   .button
     padding: 19px 62px
+  .section
+    &-title 
+      font-size: 18px
