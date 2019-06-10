@@ -33,4 +33,36 @@ $(document).ready(()=>{
       }
     ]
   });
+
+  
+
+  $("#brif-form, #offer_form").validate({
+    rules: {
+      username: {
+        required: true,
+        rangelength: [2, 15]
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      phone: {
+        required: true,
+      }
+    },
+    messages: {
+      username: {
+        required:'Заполните имя',
+        rangelength: 'Введите от 2 до 15 символов'
+      },
+      email: {
+          required: "Заполните e-mail",
+          email: "Введите корректный email"
+      },
+      phone: {
+        required: "Заполните телефон",
+      }
+    }    
+  });
+  $(".phone").mask('+7 (999) 999-99-99');
 })
