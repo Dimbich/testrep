@@ -968,3 +968,74 @@ img {
     margin-bottom: 13px;
   }
 }
+
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+.contacts__title {
+  font-family: 'Museo San Bold', sans-serif;
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 100px;
+}
+
+.contacts-block {
+  display: git;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__icon {
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  margin-right: 23px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 39px;
+  max-width: 200px;
+  line-height: 26px;
+}
+
+.contacts-list__text {
+  margin: 0;
+  margin-top: -2px;
+}
+
+.contacts-list__text a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.contacts-list__text_bold {
+  display: block;
+  font-family: 'Museo San Bold', sans-serif;
+}
