@@ -3,7 +3,10 @@
 body 
   +reg
 img 
-  max-width: 100% 
+  max-width: 100%
+form 
+  .error 
+    border-color: $error
 .container 
   max-width: 1170px
   margin: auto
@@ -21,7 +24,7 @@ img
   padding: 22px 26px
   font-size: 15px
   border-radius: 10px 
-  outline: none  
+  outline: none
 .section
   padding-top: 66px
   padding-bottom: 90px
@@ -56,3 +59,12 @@ img
       line-height: 1.2
     &-subtitle
       font-size: 14px
+  .form 
+    label 
+      margin-bottom: 8px
+
+label 
+  display: block
+  margin-bottom: 15px
+  text-align: center
+  color: $error

@@ -27,6 +27,10 @@ img {
   max-width: 100%;
 }
 
+form .error {
+  border-color: #ff5722;
+}
+
 .container {
   max-width: 1170px;
   margin: auto;
@@ -101,6 +105,16 @@ img {
   .section-subtitle {
     font-size: 14px;
   }
+  .form label {
+    margin-bottom: 8px;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #ff5722;
 }
 
 .navbar {
@@ -416,6 +430,22 @@ img {
   font-family: 'Museo San Bold', sans-serif;
 }
 
+.offer__form {
+  position: relative;
+}
+
+.offer__form #username-error {
+  position: absolute;
+  left: 55px;
+  top: 70px;
+}
+
+.offer__form #phone-error {
+  position: absolute;
+  left: 290px;
+  top: 70px;
+}
+
 @media (max-width: 1200px) {
   .offer {
     background-size: cover;
@@ -440,6 +470,15 @@ img {
   .offer__info p:first-child {
     margin-right: 0;
     margin-bottom: -10px;
+  }
+  .offer__form {
+    position: static;
+  }
+  .offer__form #username-error, .offer__form #phone-error {
+    position: static;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
   }
 }
 
@@ -761,7 +800,7 @@ img {
 .brif {
   background-image: url("../img/brif/brif_color_bg.png"), url("../img/brif/brif_bg.jpg");
   background-position: left top, center right;
-  background-size: 50%, contain;
+  background-size: 50%, cover;
   background-repeat: repeat-y, no-repeat;
 }
 
@@ -782,6 +821,10 @@ img {
       flex-basis: 50%;
   padding-left: 219px;
   text-align: center;
+}
+
+.brif__form #email-error {
+  margin-bottom: 0;
 }
 
 .brif__input {
@@ -950,7 +993,7 @@ img {
   .brif__button {
     max-width: 275px;
     font-size: 14px;
-    padding: 30px 60px;
+    padding: 25px 50px;
     margin-top: 0px;
   }
   .brif__input {
@@ -969,6 +1012,9 @@ img {
   .form__description {
     max-width: 215px;
     margin: 0 auto;
+  }
+  .form #email-error {
+    margin-bottom: 8px;
   }
   .interview {
     padding-right: 0;

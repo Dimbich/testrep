@@ -45,7 +45,16 @@
     display: block
     min-width: 192px
     +bold
-        
+  &__form
+    position: relative
+    #username-error
+      position: absolute
+      left: 55px
+      top: 70px
+    #phone-error
+      position: absolute
+      left: 290px
+      top: 70px
 @media (max-width: 1200px)
   .offer
     background-size: cover
@@ -61,6 +70,14 @@
       p:first-child
         margin-right: 0
         margin-bottom: -10px
+    &__form
+      position: static
+      #username-error, #phone-error
+        position: static
+        display: block
+        margin-bottom: 10px
+        text-align: center
+
 @media (max-width: 768px)
   .offer
     &:before 
