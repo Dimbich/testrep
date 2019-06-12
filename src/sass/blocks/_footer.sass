@@ -7,15 +7,15 @@
   width: 50%
 .contacts
   flex-basis: 50%
-  padding-top: 100px
-  padding-left: 200px
+  padding-top: 72px
+  padding-left: 214px
   &__title
     +bold 
     font-size: 22px
-    line-height: 1.4
-    margin-bottom: 100px
+    line-height: 1.5
+    margin-bottom: 90px
   &-block 
-    display: git
+    display: flex
     justify-content: flex-end
   &-list 
     padding: 0
@@ -24,19 +24,40 @@
       height: 20px
       width: 20px
       line-height: 20px
-      margin-right: 23px
+      margin-right: 22px
+      margin-top: 5px
     &__item
       display: flex
       align-items: flex-start
-      margin-bottom: 39px
+      margin-bottom: 29px
       max-width: 200px
       line-height: 26px;
     &__text 
       margin: 0
-      margin-top: -2px
+      // margin-top: -2px
       a
         text-decoration: none
         color: #000000
       &_bold
         display: block
         +bold
+@media (max-width: 1200px)
+  .contacts
+    padding-left: 100px
+@media (max-width: 768px)
+  .map 
+    width: 100%
+    top: 100%
+  .contacts
+    padding-left: 0
+    padding-bottom: 29pxgit 
+    &__title
+      font-size: 18px
+      line-height: 1.2
+      margin: 0
+      margin-bottom: 31px
+    &-block 
+      flex-direction: column
+    &-list 
+      &__icon
+        margin-right: 14px
