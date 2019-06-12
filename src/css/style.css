@@ -217,7 +217,7 @@ label {
 .hero-text {
   -ms-flex-preferred-size: 53%;
       flex-basis: 53%;
-  padding-right: 140px;
+  padding-right: 130px;
 }
 
 .hero-text__title {
