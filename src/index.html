@@ -320,10 +320,7 @@
   </main>
 
   <footer class="footer">
-    <div class="map" id="map">
-      <script async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afd9db69f1e5fb9c0514efe96c555feaa60743b05a1b308e566760a4d6302967a&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false">
-      </script>
+    <div class="map" id="map" >
     </div>
     <div class="container">
       <div class="contacts-block">
@@ -360,11 +357,8 @@
       <h4 class="modal-dialog__title">Всплывающее окно</h4>  
     </div>
   </div>
-  <!-- <script src="./js/main.js"></script> -->
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-  crossorigin="anonymous"></script>
+
+  <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./js/wow.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
@@ -374,7 +368,7 @@
     new WOW().init();
   </script>
   <!-- Yandex.Metrika counter -->
-  <script>
+  <script async>
     (function (m, e, t, r, i, k, a) {
       m[i] = m[i] || function () {
         (m[i].a = m[i].a || []).push(arguments)
@@ -387,7 +381,7 @@
       clickmap: true,
       trackLinks: true,
       accurateTrackBounce: true,
-      webvisor: true,
+      webvisor: false,
       trackHash: true
     });
   </script> 

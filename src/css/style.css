@@ -347,6 +347,7 @@ template {
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -355,6 +356,7 @@ template {
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -999,11 +1001,13 @@ label {
   line-height: 35px;
   margin-bottom: 18px;
   text-align: left;
+  font-size: 24px;
 }
 
 .offer__subtitle {
   max-width: 250px;
   margin-bottom: 34px;
+  font-size: 16px;
 }
 
 .offer__input {
@@ -1185,6 +1189,10 @@ label {
   }
 }
 
+.price {
+  padding-top: 95px;
+}
+
 .price__title {
   margin: auto;
   margin-bottom: 46px;
@@ -1239,11 +1247,12 @@ label {
 
 .card__text {
   padding: 40px;
-  padding-top: 30px;
+  padding-top: 38px;
 }
 
 .card__title {
   margin-top: 0;
+  margin-bottom: 31px;
   font-size: 18px;
 }
 
