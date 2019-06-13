@@ -978,6 +978,7 @@ label {
   background-size: 50%;
   background-position: center right;
   position: relative;
+  padding-bottom: 70px;
 }
 
 .offer:before {
@@ -1163,6 +1164,7 @@ label {
 .portfolio {
   background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
   background-size: 50%;
+  padding-top: 93px;
 }
 
 .portfolio__title {
@@ -1655,6 +1657,7 @@ label {
     font-size: 14px;
     padding: 25px 50px;
     margin-top: 0px;
+    margin-bottom: 25px;
   }
   .brif__input {
     max-width: 275px;
@@ -1670,7 +1673,9 @@ label {
     margin-bottom: 30px;
   }
   .form__description {
-    max-width: 215px;
+    font-size: 14px;
+    max-width: 140px;
+    line-height: 24px;
     margin: 0 auto;
   }
   .form #email-error {
