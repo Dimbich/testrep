@@ -69,7 +69,7 @@ $(document).ready(function() {
   const mapStart = $('.brif').offset().top;
   let isScroll;
 
-  $(window).scroll(() => {
+  $(window).scroll(function() {
     if ($(document).scrollTop() >= mapStart && !isScroll) {
       $('.map').append(
         '<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afd9db69f1e5fb9c0514efe96c555feaa60743b05a1b308e566760a4d6302967a&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>');

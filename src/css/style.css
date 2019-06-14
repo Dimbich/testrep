@@ -780,7 +780,7 @@ label {
 }
 
 .navbar__button {
-  margin-left: 30px;
+  margin-left: 27px;
   font-size: 13px;
 }
 
@@ -820,7 +820,7 @@ label {
 }
 
 .hero {
-  padding: 50px 0;
+  padding: 50px 0 50px 0;
   background-color: #f5f5f5;
 }
 
@@ -831,16 +831,16 @@ label {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 53%;
-      flex-basis: 53%;
-  padding-right: 130px;
+  -ms-flex-preferred-size: 52%;
+      flex-basis: 52%;
+  padding-right: 125px;
 }
 
 .hero-text__title {
   font-family: 'Museo San Bold', sans-serif;
   font-size: 41px;
   line-height: 55px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .hero-text__subtitle {
@@ -975,8 +975,8 @@ label {
 
 .offer {
   background: url("../img/offer/offer_bg.png") no-repeat;
-  background-size: 50%;
-  background-position: center right;
+  background-size: contain;
+  background-position: right center;
   position: relative;
   padding-bottom: 70px;
 }
@@ -1000,6 +1000,7 @@ label {
 .offer__title {
   max-width: 360px;
   line-height: 35px;
+  margin-top: 10px;
   margin-bottom: 18px;
   text-align: left;
   font-size: 24px;
@@ -1046,7 +1047,7 @@ label {
 
 .offer__phone {
   display: block;
-  min-width: 192px;
+  min-width: 199px;
   font-family: 'Museo San Bold', sans-serif;
 }
 
@@ -1169,7 +1170,7 @@ label {
 
 .portfolio__title {
   margin: auto;
-  margin-bottom: 100px;
+  margin-bottom: 95px;
   max-width: 100%;
 }
 
@@ -1211,7 +1212,7 @@ label {
 
 .price__title {
   margin: auto;
-  margin-bottom: 46px;
+  margin-bottom: 49px;
 }
 
 .price__subtitle {
@@ -1262,13 +1263,13 @@ label {
 }
 
 .card__text {
-  padding: 40px;
+  padding: 44px;
   padding-top: 38px;
 }
 
 .card__title {
   margin-top: 0;
-  margin-bottom: 31px;
+  margin-bottom: 28px;
   font-size: 18px;
 }
 
@@ -1376,7 +1377,7 @@ label {
           align-items: center;
   border-radius: 50%;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .step__text {
@@ -1387,7 +1388,7 @@ label {
 }
 
 .steps {
-  padding-top: 40px;
+  padding-top: 32px;
 }
 
 .steps__title {
@@ -1398,7 +1399,7 @@ label {
 
 .steps__subtitle {
   text-align: center;
-  margin-bottom: 63px;
+  margin-bottom: 68px;
 }
 
 .steps-block {
@@ -1481,7 +1482,7 @@ label {
 .brif__form {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-left: 219px;
+  padding-left: 212px;
   text-align: center;
 }
 
@@ -1490,14 +1491,14 @@ label {
 }
 
 .brif__input {
-  width: 95%;
+  width: 100%;
   max-width: 370px;
   margin-bottom: 15px;
 }
 
 .brif__button {
   height: 70px;
-  width: 95%;
+  width: 100%;
   max-width: 370px;
   margin-top: 15px;
   margin-bottom: 33px;
