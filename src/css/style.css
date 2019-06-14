@@ -1320,7 +1320,7 @@ label {
 
 @media (max-width: 768px) {
   .price {
-    padding-top: 47px;
+    padding-top: 41px;
   }
   .price__title {
     max-width: 242px;
@@ -1410,18 +1410,6 @@ label {
       flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
-  .step {
-    margin-bottom: 30px;
-  }
-  .steps-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 @media (max-width: 1200px) {
   .step {
     margin-bottom: 30px;
@@ -1455,8 +1443,17 @@ label {
   .step__image {
     margin-bottom: 16px;
   }
+  .step__image:nth-child(3) {
+    margin-bottom: 30px;
+  }
   .steps {
     padding-top: 0;
+  }
+  .steps-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1686,6 +1683,7 @@ label {
     padding-right: 0;
   }
   .interview__title {
+    max-width: 220px;
     font-size: 18px;
     line-height: 1.2;
     margin-bottom: 16px;
