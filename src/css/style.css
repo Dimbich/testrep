@@ -435,10 +435,14 @@ form .error {
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 21px;
+    padding: 0 22px;
+    padding-right: 24px;
   }
   .button {
-    padding: 19px 62px;
+    padding: 11px 56px;
+  }
+  .input {
+    padding: 22px 21px;
   }
   .section {
     padding: 26px 0;
@@ -935,7 +939,7 @@ label {
 @media (max-width: 768px) {
   .hero {
     padding-top: 21px;
-    padding-bottom: 34px;
+    padding-bottom: 46px;
   }
   .hero-block {
     -webkit-box-orient: vertical;
@@ -945,16 +949,16 @@ label {
   }
   .hero-text__title {
     font-size: 24px;
-    line-height: 1.4;
-    margin-bottom: 4px;
+    line-height: 1.3;
+    margin-bottom: 6px;
   }
   .hero-text__subtitle {
     font-size: 16px;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
   .hero-list {
     display: block;
-    margin-bottom: 44px;
+    margin-bottom: 36px;
   }
   .hero-list__item {
     margin-bottom: 20px;
@@ -966,7 +970,7 @@ label {
   .hero-list__text {
     font-size: 12px;
     max-width: 200px;
-    line-height: 1;
+    line-height: 1.2;
   }
   .hero-list__image {
     margin-right: 15px;
@@ -1087,7 +1091,7 @@ label {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-top: 7px;
-    margin-left: 9px;
+    margin-left: 3px;
   }
   .offer__info p:first-child {
     margin-right: 0;
@@ -1193,7 +1197,7 @@ label {
 @media (max-width: 768px) {
   .portfolio {
     padding-top: 40px;
-    padding-bottom: 63px;
+    padding-bottom: 59px;
   }
   .portfolio__title {
     margin-bottom: 40px;
@@ -1202,7 +1206,7 @@ label {
     margin-top: 45px;
   }
   .slider {
-    padding: 0 15px;
+    padding: 3px 15px;
   }
 }
 
@@ -1320,14 +1324,17 @@ label {
 
 @media (max-width: 768px) {
   .price {
-    padding-top: 41px;
+    padding-top: 49px;
   }
   .price__title {
     max-width: 242px;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
+  }
+  .price__subtitle {
+    margin-left: -16px;
   }
   .card {
-    margin-bottom: 32px;
+    margin-bottom: 31px;
   }
   .card__title {
     margin-bottom: 12px;
@@ -1337,7 +1344,7 @@ label {
     max-width: 150px;
   }
   .card__text {
-    padding: 27px 0 29px 0;
+    padding: 29px 0 31px 0;
   }
 }
 
@@ -1440,13 +1447,30 @@ label {
 }
 
 @media (max-width: 768px) {
+  .step:nth-child(1) div:first-child {
+    margin-bottom: 18px;
+  }
+  .step:nth-child(2) div:first-child {
+    margin-bottom: 27px;
+  }
+  .step:nth-child(3) div:first-child {
+    margin-bottom: 28px;
+  }
+  .step:nth-child(4) div:first-child {
+    margin-bottom: 25px;
+  }
+  .step:nth-child(5) div:first-child {
+    margin-bottom: 25px;
+  }
   .step__image {
     margin-bottom: 16px;
   }
-  .step__image:nth-child(3) {
-    margin-bottom: 30px;
+  .step__text {
+    line-height: 1.4;
+    max-width: 129px;
   }
   .steps {
+    margin-top: -2px;
     padding-top: 0;
   }
   .steps-block {
@@ -1455,6 +1479,9 @@ label {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .steps__title {
+    margin-bottom: 24px;
+  }
 }
 
 .brif {
@@ -1462,10 +1489,11 @@ label {
   background-position: left top, center right;
   background-size: 50%, cover;
   background-repeat: repeat-y, no-repeat;
+  padding-bottom: 14px;
 }
 
 .brif-block {
-  margin-top: 12px;
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1531,11 +1559,20 @@ label {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 23px;
+  line-height: 35px;
   font-family: 'Museo San Bold', sans-serif;
+}
+
+.interview-list__item:nth-child(2) {
+  margin-bottom: 35px;
 }
 
 .interview-list__item:nth-child(3) {
   margin-bottom: 35px;
+}
+
+.interview-list__item:nth-child(3) span:first-child {
+  margin-top: -10px;
 }
 
 .interview-list__counter {
@@ -1553,7 +1590,7 @@ label {
 .interview-list__text {
   max-width: 400px;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.15;
 }
 
 .form__title {
@@ -1623,8 +1660,12 @@ label {
   .brif {
     background-image: url("../img/brif/brif_color_bg.png"), url("../img/brif/brif_bg.jpg");
     background-position: top center, center bottom;
-    background-size: 100% 46%,cover;
+    background-size: 100% 47.3%,cover;
     background-repeat: repeat-x, no-repeat;
+    padding-bottom: 70px;
+  }
+  .brif__title {
+    margin-top: 30px;
   }
   .brif-block {
     -webkit-box-orient: vertical;
@@ -1639,8 +1680,11 @@ label {
 }
 
 @media (max-width: 576px) {
+  .brif {
+    padding-bottom: 30px;
+  }
   .brif__form {
-    margin-top: 80px;
+    margin-top: 85px;
     padding-left: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1660,15 +1704,17 @@ label {
   .brif__input {
     max-width: 275px;
     margin-bottom: 8px;
+    padding: 24px 21px;
   }
   .form__title {
     font-size: 18px;
     line-height: 1.2;
-    margin-bottom: 29px;
+    margin-bottom: 26px;
+    margin-right: -5px;
   }
   .form__subtitle {
     font-size: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
   .form__description {
     font-size: 14px;
@@ -1696,16 +1742,25 @@ label {
     text-align: left;
   }
   .interview-list__counter {
-    margin-right: 8px;
+    margin-right: 4px;
   }
   .interview-list__text {
-    max-width: 210px;
+    max-width: 235px;
+  }
+  .interview-list__item:nth-child(1) {
+    margin-bottom: 30px;
   }
   .interview-list__item:nth-child(2) {
-    margin-bottom: 13px;
+    margin-bottom: 20px;
+  }
+  .interview-list__item:nth-child(2) span:first-child {
+    margin-top: -6px;
   }
   .interview-list__item:nth-child(3) {
-    margin-bottom: 13px;
+    margin-bottom: 25px;
+  }
+  .interview-list__item:nth-child(3) span:first-child {
+    margin-top: 0px;
   }
 }
 
@@ -1723,7 +1778,7 @@ label {
 .contacts {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-top: 72px;
+  padding-top: 70px;
   padding-left: 214px;
 }
 
@@ -1795,13 +1850,13 @@ label {
   }
   .contacts {
     padding-left: 0;
-    padding-bottom: 29pxgit;
+    padding-bottom: 29px;
+    margin-left: 3px;
   }
   .contacts__title {
     font-size: 18px;
     line-height: 1.2;
-    margin: 0;
-    margin-bottom: 31px;
+    margin: -5px 0 31px 0;
   }
   .contacts-block {
     -webkit-box-orient: vertical;
@@ -1810,6 +1865,6 @@ label {
             flex-direction: column;
   }
   .contacts-list__icon {
-    margin-right: 14px;
+    margin-right: 11px;
   }
 }
